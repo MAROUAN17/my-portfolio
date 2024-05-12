@@ -7,15 +7,22 @@ export function Title() {
     const text2 = "Back-End Developer"
     const [text, setText] = useState(text1);
 
-    const changeText = () => {
-        setInterval(() => {
-            setText(text => text === text1 ? text2 : text1);
-        }, 5000)
+    const displayText1 = () => {
+        setText(text1);
+        setTimeout(displayText2, 5000);
+    }
+
+    const displayText2 = () => {
+        setText(text2);
+        setTimeout(displayText1, 5000);
     }
 
     useEffect(() => {
-        changeText()
-        return () => clearInterval(changeText);
+        displayText1()
+        return () => {
+            clearTimeout(displayText1);
+            clearTimeout(displayText2);
+        }
     }, [])
 
     const variants = {
@@ -28,9 +35,11 @@ export function Title() {
             <h1 className="">Hi,</h1>
             <h1 className="">I'm Marouan</h1>
             <motion.span 
+                className=""
                 initial="hidden"
                 animate="visible"
                 transition={{ staggerChildren: 0.2 }}
+                key={text}
             >
                 {text.split('').map((text) => {
                     return (
