@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'main-image': "url('./assets/example-face.jpg')",
+        'main-image': "url('./assets/my-face.png')",
       },
       fontFamily: {
         'poppins': ['poppins'],
