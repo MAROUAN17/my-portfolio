@@ -2,10 +2,15 @@ import React from 'react'
 
 export default function Content() {
   return (
-      <div className='py-80 px-20'>
+      <div className='py-56 px-20'>
+        <div className='py-12'>
           <h1 className='text-white font-bold lg:text-9xl text-6xl max-md:text-center'>MAROUAN</h1>
           <h1 className='text-white font-bold lg:text-9xl text-6xl max-md:text-center'>AGLAGAL</h1>
           <p className="text-white py-4 max-md:text-sm max-md:text-center">Hello, my name is marouan aglagal, nice to meet you i would like<br></br> to welcome you with my personal portfolio</p>
+          <div className='py-6 space-x-5'>
+            <button className="max-sm:hidden text-white border boder-white px-5 py-4 rounded-full font-bold">See My Projects</button>
+          </div>
+        </div>
       </div>
   )
 }

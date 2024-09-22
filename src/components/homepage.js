@@ -6,9 +6,8 @@ import Capabilities from "./capabilities";
 export default function HomePage() {
     return (
         <div>
-            <div className="font-poppins">
-                <div className='bg-main-image bg-no-repeat bg-right w-full h-full opacity-60 absolute bg-[length:80%]'>
-                </div>
+            <div className="font-poppins relative">
+                <div className='absolute inset-0 bg-[right_1px] overflow-hidden max-h-max bg-main-image bg-no-repeat w-full h-full opacity-60 bg-[length:70%]'></div>
                 <nav className="relative">
                     <NavBar />
                 </nav>
@@ -16,7 +15,7 @@ export default function HomePage() {
                     <Content />
                 </div>
             </div>
-            <div className="">
+            <div className="relative">
                 <Capabilities />
             </div>
         </div>

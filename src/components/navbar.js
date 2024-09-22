@@ -4,7 +4,7 @@ import Menu from "../assets/main-menu.png"
 export default function NavBar() {
     return (
         <nav className="relative">
-            <div className="flex justify-between items-center p-8">
+            <div className="flex justify-between items-center px-20 py-6">
                 <div className="">
                     <h1 className="text-white font-bold text-2xl">MAROUAN</h1>
                 </div>
