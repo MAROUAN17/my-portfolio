@@ -40,3 +40,9 @@
     transform: rotate(360deg);
   }
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}

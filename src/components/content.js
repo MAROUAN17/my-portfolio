@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Content() {
   return (
-      <div className='py-56 px-20'>
+      <div className='py-52 px-20'>
         <div className='py-12'>
           <h1 className='text-white font-bold lg:text-9xl text-6xl max-md:text-center'>MAROUAN</h1>
           <h1 className='text-white font-bold lg:text-9xl text-6xl max-md:text-center'>AGLAGAL</h1>
