@@ -13,17 +13,22 @@ module.exports = {
       },
       animation: {
         "loop-scroll": "loop-scroll 50s linear infinite",
-        "loop-scroll-rev": "loop-scroll-rev 50s linear infinite",
+        "slideIn": "slide-in 180ms linear",
+        "slideOut": "slide-out 180ms linear",
       },
       keyframes: {
         "loop-scroll" : {
           from: { transform: "translateX(0%)" },
           to: { transform: "translateX(-100%)" },
         },
-        "loop-scroll-rev" : {
-          from: { transform: "translateX(100%)" },
-          to: { transform: "translateX(0%)" },
+        "slide-in" : {
+          from: { transform: "translateY(-100%)" },
+          to: { transform: "translateY(0%)" },
         },
+        "slide-out" : {
+          from: { transform: "translateY(0%)" },
+          to: { transform: "translateY(-100%)" },
+        }
       }
     },
   },

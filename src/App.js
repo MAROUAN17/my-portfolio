@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 function App() {
   return (
       <div className="font-poppins">
-          <div className="white bg-[right_1px] overflow-hidden bg-main-image bg-no-repeat w-full h-full bg-[length:70%]">
+          <div className="lg:bg-[right_1px] md:bg-[center_1px] overflow-hidden bg-main-image bg-no-repeat w-full h-full md:bg-[length:60%] xl:bg-[length:40%]">
               <NavBar />
               <Content />
               <Capabilities />
